@@ -1,0 +1,335 @@
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* основной цвет  #212121; */
+/* вторичный цвет #757575; */
+/* Ефект Hover #2196F3; */
+/* Белый #FFFFFF; */
+/* Подвал rgba(255, 255, 255, 0.6); */
+
+/* outline: 2px solid tomato; */
+
+/* БЛОЧНАЯ МОДЕЛЬ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--white-text-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto';
+    letter-spacing: 0.03em;
+    align-content: center;
+}
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+.main-nav {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+.navigate {
+    display: flex;
+    align-items: center;
+
+}
+.site-nav {
+    display: flex;
+    padding: 0;
+    margin-left: 93px;
+}
+.site-nav .item:not(:last-child){
+    margin-right: 50px;
+}
+.auth-nav {
+    display: flex;
+    padding: 0;
+    margin-left: auto;
+}
+.auth-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+
+
+
+/* СТИЛИЗАЦИЯ */
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --hover-text-color: #2196F3;
+    --white-text-color: #FFFFFF;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-style: normal;
+}
+.invisible {
+    visibility: hidden;
+}
+/* site-nav */
+.site-nav a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;  
+    color: var(--primary-text-color);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--hover-text-color);
+}
+.site-nav .current {
+    color: var(--hover-text-color);
+}
+.auth-nav a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+.auth-nav a:hover,
+.auth-nav a:focus {
+    color: var(--hover-text-color);
+}
+/* Логотип */
+.logo {
+    text-decoration: none;
+}
+.logo-web {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--hover-text-color);
+}
+.logo-studio {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--primary-text-color);
+}
+/* section hero */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #2F303A;
+}
+.hero-title {
+    text-align: center;
+    margin: 0;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-text-color)
+}
+.hero button {
+    padding: 10px 32px;
+    margin: 30px auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+    background-color: var(--hover-text-color);
+    cursor: pointer;
+}
+/* Достоинства */
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 89px;
+    margin-bottom: 94px;
+}
+.section-title .item {
+    width: 270px;
+}
+.caption {
+    margin-bottom: 10px;
+}
+.section-title h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.section-title p {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--title-text-color);
+}
+/* чем мы занимаемся */
+.section-work {
+    margin-bottom: 94px;
+}
+.container .work {
+    display: flex;
+    flex-wrap: wrap;
+}
+.work .item:not(:last-child) {
+    margin-right: 30px;
+}
+.section ul {
+    list-style: none;
+    text-decoration: none;
+}
+.container h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+}
+/* Наша команда */
+.our-team {
+    height: 648px;
+    background-color: #F5F4FA;
+}
+.team {
+    display: flex;
+    justify-content: space-between;
+}
+.team-title {
+    padding-top: 94px;
+}
+.team .item:not(:last-child) {
+    margin-right: 30px;
+}
+.team h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.team p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--title-text-color); 
+}
+/* Подвал */
+.footer {
+    background-color: #2F303A;
+    height: 252px;
+}
+.logo-footer {
+    padding-top: 60px;
+    padding-bottom: 20px;
+} 
+.footer-adress li {
+    margin-bottom: 9px;
+}
+.logo-studio-white {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--white-text-color);
+}
+.footer-adress a {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--white-text-color);
+}
+.footer-adress a:hover,
+.footer-adress a:focus {
+    color: var(--hover-text-color);
+}
+.auth-footer a {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+}
+.auth-footer a:hover,
+.auth-footer a:focus {
+    color: var(--hover-text-color);
+}
+/* portfolio */
+.offer {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 34px;
+}
+.offer-img {
+    display: flex;
+    margin-bottom: 94px;
+}
+.item-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item-list {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+.item h2 {
+    text-align: start;
+    margin-bottom: 4px;
+}
+.item-img .item:not(:nth-child(3n)) {
+    margin-right:30px;
+}
+.item-img .item:not(:nth-child(n+7)) {
+    margin-bottom: 30px;
+}
+.item [type="button"] {
+    padding: 6px 22px;
+}
+button[type="button"] {
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--primary-text-color);
+    cursor: pointer;
+}
+[type="button"]:hover,
+[type="button"]:focus {
+    color: var(--white-text-color);
+    background-color: var(--hover-text-color);
+}
+.portfolio h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+.portfolio p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--title-text-color);
+}
