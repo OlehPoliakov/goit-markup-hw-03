@@ -50,12 +50,12 @@
     <main>
         <section class="hero">
             <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button type="button">Заказать услугу</button>
+            <button type="button"><span class="order">Заказать услугу</span></button>
         </section>
 <!-- Достоинства -->
         <section class="container">
-            <div class="invisible"><h2>Достоинства</h2></div>
-
+            <div class="visually-hidden"><h2>Достоинства</h2></div>
+            <div class="section-dignity">
                 <ul class="section-title">
                     <li class="item">
                         <h3 class="caption">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
@@ -81,43 +81,55 @@
                             очевидна, что реализация плановых <br>
                             заданий.</p>
                     </li>
-                </ul>    
+                </ul>
+            </div>
         </section>
 <!-- Чем мы занимаемся -->
-            <section class="container section-work">
-                <h2>Чем мы занимаемся</h2>
-
-                <ul class="work">
-                    <li class="item"><img src="images/box1.jpg" alt="box1" width="370" height="294"></li>
-                    <li class="item"><img src="images/box2.jpg" alt="box2" width="370" height="294"></li>
-                    <li class="item"><img src="images/box3.jpg" alt="box3" width="370" height="294"></li>
-                </ul>
+            <section class="container">
+                <div class="section-work">
+                    <h2>Чем мы занимаемся</h2>
+                    
+                    <ul class="work">
+                        <li class="item "><img src="images/box1.jpg" alt="box1" width="370" height="294"></li>
+                        <li class="item"><img src="images/box2.jpg" alt="box2" width="370" height="294"></li>
+                        <li class="item"><img src="images/box3.jpg" alt="box3" width="370" height="294"></li>
+                    </ul>
+                </div>
             </section>
 <!-- Наша Команда -->
             <section class="our-team">
-                <div class="container section-team">
+                <div class="container">
                     <h2 class="team-title">Наша команда</h2>
 
                     <ul class="team">
                         <li class="item">
                             <img src="images/teamcard1.jpg" alt="Игорь Демьяненко" width="270" height="260">
-                            <h3>Игорь Демьяненко</h3>
-                            <p>Designer</p>
+                            <div class="team-name">
+                                <h3>Игорь Демьяненко</h3>
+                                <p>Designer</p>
+                            </div>
                         </li>
                         <li class="item">
                             <img src="images/teamcard2.jpg" alt="Ольга Репина" width="270" height="260">
-                            <h3>Ольга Репина</h3>
-                            <p>Frontend Developer</p>
+                            <div class="team-name">
+                                <h3>Ольга Репина</h3>
+                                <p>Frontend Developer</p>
+                            </div>
                         </li>
                         <li class="item">
                             <img src="images/teamcard3.jpg" alt="Николай Тарасов" width="270" height="260">
-                            <h3>Николай Тарасов</h3>
-                            <p>Marketing</p>
+                            <div class="team-name">
+                                <h3>Николай Тарасов</h3>
+                                <p>Marketing</p>
+                            </div>
                         </li>
                         <li class="item">
                             <img src="images/teamcard4.jpg" alt="Михаил Ермаков" width="270" height="260">
-                            <h3>Михаил Ермаков</h3>
-                            <p>UI Designer</p>
+                            <div class="team-name">
+                                <h3>Михаил Ермаков</h3>
+                                <p>UI Designer</p>
+                            </div>
+                            
                         </li>
                     </ul>
                 </div>
