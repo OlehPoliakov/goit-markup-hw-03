@@ -173,9 +173,9 @@ a {
 }
 
 /* Достоинства */
-.section-dignity {
+.dignity {
     padding-top: 89px;
-    padding-bottom: 94px;
+        padding-bottom: 94px;
 }
 .section-title {
     display: flex;
@@ -201,14 +201,17 @@ a {
 }
 
 /* чем мы занимаемся */
-.container .work {
+.work {
+    padding-bottom: 94px;
+}
+.container .work-item {
     display: flex;
     flex-wrap: wrap;
 }
 .item img {
     display: block;
 }
-.work .item:not(:last-child) {
+.work-item .item:not(:last-child) {
     margin-right: 30px;
 }
 .section ul {
@@ -226,7 +229,7 @@ a {
 /* Наша команда */
 .our-team {
     padding-top: 94px;
-        padding-bottom: 94px;
+    padding-bottom: 94px;
     background-color: #F5F4FA;
 }
 .team {
@@ -261,7 +264,6 @@ a {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
-    height: 252px;
 }
 .logo-footer {
     margin-bottom: 20px;
@@ -300,8 +302,7 @@ a {
 
 /* portfolio */
 .offer-items {
-    padding-top: 90px;
-    padding-bottom: 34px;
+    margin-bottom: 34px;
 }
 .offer {
     display: flex;
@@ -311,9 +312,12 @@ a {
     margin-right: 8px;
 }
 /* Portfolio img */
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .offer-img {
     display: flex;
-    padding-bottom: 94px;
 }
 .item-img {
     display: flex;
