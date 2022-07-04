@@ -175,7 +175,7 @@ a {
 /* Достоинства */
 .dignity {
     padding-top: 89px;
-        padding-bottom: 94px;
+    padding-bottom: 94px;
 }
 .section-title {
     display: flex;
@@ -307,6 +307,7 @@ a {
 .offer {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .offer .item:not(:last-child) {
     margin-right: 8px;
@@ -315,9 +316,6 @@ a {
 .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
-}
-.offer-img {
-    display: flex;
 }
 .item-img {
     display: flex;
